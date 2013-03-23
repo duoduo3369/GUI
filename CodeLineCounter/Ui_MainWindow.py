@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'E:\python\CodeLineCounter\MainWindow.ui'
 #
-# Created: Sat Mar 23 10:20:15 2013
+# Created: Sat Mar 23 16:40:51 2013
 #      by: PyQt4 UI code generator 4.9.5
 #
 # WARNING! All changes made in this file will be lost!
@@ -17,7 +17,55 @@ except AttributeError:
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(641, 448)
+        MainWindow.resize(741, 476)
+        MainWindow.setStyleSheet(_fromUtf8("QMainWindow\n"
+"{\n"
+"    \n"
+"    background-color:rgb(255, 85, 0)\n"
+"}\n"
+"QLabel\n"
+"{\n"
+"    color:rgb(255, 255, 255);\n"
+"    padding:10px;\n"
+"    font-family: \"Verdana\";\n"
+"    font-size: 15px;\n"
+"    text-align: center;\n"
+"}\n"
+"QLineEdit\n"
+"{\n"
+"    color:rgb(0,0,0);\n"
+"    background-color:#F8F8F8;\n"
+"    border:0;\n"
+"    padding:5px 5px;\n"
+"}\n"
+"QPushButton\n"
+"{\n"
+"    color: rgb(255, 255, 255);\n"
+"    background-color:rgb(2, 167, 255);\n"
+"    border:none;\n"
+"    padding: 10px 60px;\n"
+"    font-family: \"Verdana\";\n"
+"    font-size: 15px;\n"
+"    text-align: center;\n"
+"}\n"
+"QPushButton:hover, QPushButton:pressed , QPushButton:checked\n"
+"{\n"
+"    background-color:rgb(10, 128, 255);\n"
+"    padding-right: 20px;    \n"
+"    font-weight:100\n"
+"}\n"
+"QPushButton:hover\n"
+"{\n"
+"    background-image: url(:/icon/next_dark);\n"
+"    background-repeat:no-repeat;\n"
+"    background-position: center left;\n"
+"}\n"
+"QPushButton:pressed, QPushButton:checked\n"
+"{\n"
+"    background-image: url(:/icon/next_light);\n"
+"    background-repeat:no-repeat;\n"
+"    background-position: center left;\n"
+"}"))
         self.centralWidget = QtGui.QWidget(MainWindow)
         self.centralWidget.setObjectName(_fromUtf8("centralWidget"))
         self.gridLayout_3 = QtGui.QGridLayout(self.centralWidget)
@@ -30,6 +78,11 @@ class Ui_MainWindow(object):
         spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.gridLayout_2.addItem(spacerItem, 0, 1, 1, 1)
         self.choiceRootDicButton = QtGui.QPushButton(self.centralWidget)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Maximum, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(40)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.choiceRootDicButton.sizePolicy().hasHeightForWidth())
+        self.choiceRootDicButton.setSizePolicy(sizePolicy)
         self.choiceRootDicButton.setObjectName(_fromUtf8("choiceRootDicButton"))
         self.gridLayout_2.addWidget(self.choiceRootDicButton, 0, 2, 1, 1)
         spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
@@ -56,6 +109,7 @@ class Ui_MainWindow(object):
         self.countButton.setObjectName(_fromUtf8("countButton"))
         self.gridLayout_3.addWidget(self.countButton, 3, 0, 1, 3)
         self.listWidget = QtGui.QListWidget(self.centralWidget)
+        self.listWidget.setMinimumSize(QtCore.QSize(0, 200))
         self.listWidget.setObjectName(_fromUtf8("listWidget"))
         self.gridLayout_3.addWidget(self.listWidget, 4, 0, 1, 3)
         spacerItem4 = QtGui.QSpacerItem(317, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
@@ -67,6 +121,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.totalLineLabel)
         self.totalLineEdit = QtGui.QLineEdit(self.centralWidget)
         self.totalLineEdit.setEnabled(False)
+        self.totalLineEdit.setMinimumSize(QtCore.QSize(100, 0))
         self.totalLineEdit.setObjectName(_fromUtf8("totalLineEdit"))
         self.horizontalLayout.addWidget(self.totalLineEdit)
         self.gridLayout_3.addLayout(self.horizontalLayout, 5, 1, 1, 2)

@@ -1,8 +1,9 @@
-<!DOCTYPE RCC>
-<RCC version="1.0">
-<qresource>
- <file>trans_CN.qm</file>
-</qresource>
+<RCC>
+    <qresource prefix="/">
+        <file>trans_CN.qm</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file alias="next_light">icon/light/appbar.navigate.next.png</file>
+        <file alias="next_dark">icon/dark/appbar.navigate.next.png</file>
+    </qresource>
 </RCC>
- 
-

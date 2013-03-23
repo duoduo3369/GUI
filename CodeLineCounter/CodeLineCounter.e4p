@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-4.6.dtd">
 <!-- eric4 project file for project CodeLineCounter -->
-<!-- Saved: 2013-03-22, 22:02:36 -->
+<!-- Saved: 2013-03-23, 11:31:42 -->
 <!-- Copyright (C) 2013 咄咄, duoduo3_69@163.com -->
 <Project version="4.6">
   <Language>en</Language>
@@ -13,14 +13,18 @@
   <Email>duoduo3_69@163.com</Email>
   <Sources>
     <Source>MainWindow.pyw</Source>
+    <Source>resource_rc.py</Source>
+    <Source>count_lines.py</Source>
     <Source>Ui_MainWindow.py</Source>
   </Sources>
   <Forms>
     <Form>MainWindow.ui</Form>
   </Forms>
   <Translations>
+    <Translation>trans_CN.ts</Translation>
   </Translations>
   <Resources>
+    <Resource>resource.qrc</Resource>
   </Resources>
   <Interfaces>
   </Interfaces>

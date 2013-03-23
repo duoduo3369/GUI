@@ -6,12 +6,62 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>641</width>
-    <height>448</height>
+    <width>741</width>
+    <height>476</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>CodeLineCounter</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+	
+	background-color:rgb(255, 85, 0)
+}
+QLabel
+{
+	color:rgb(255, 255, 255);
+	padding:10px;
+	font-family: &quot;Verdana&quot;;
+	font-size: 15px;
+	text-align: center;
+}
+QLineEdit
+{
+	color:rgb(0,0,0);
+	background-color:#F8F8F8;
+	border:0;
+	padding:5px 5px;
+}
+QPushButton
+{
+	color: rgb(255, 255, 255);
+	background-color:rgb(2, 167, 255);
+	border:none;
+    padding: 10px 60px;
+	font-family: &quot;Verdana&quot;;
+	font-size: 15px;
+	text-align: center;
+}
+QPushButton:hover, QPushButton:pressed , QPushButton:checked
+{
+	background-color:rgb(10, 128, 255);
+	padding-right: 20px;	
+	font-weight:100
+}
+QPushButton:hover
+{
+	background-image: url(:/icon/next_dark);
+	background-repeat:no-repeat;
+	background-position: center left;
+}
+QPushButton:pressed, QPushButton:checked
+{
+	background-image: url(:/icon/next_light);
+	background-repeat:no-repeat;
+	background-position: center left;
+}</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout_3">
@@ -29,6 +79,9 @@
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
         <property name="sizeHint" stdset="0">
          <size>
           <width>40</width>
@@ -39,6 +92,12 @@
       </item>
       <item row="0" column="2">
        <widget class="QPushButton" name="choiceRootDicButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>40</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="text">
          <string>Choice root directory</string>
         </property>
@@ -48,6 +107,9 @@
        <spacer name="horizontalSpacer_2">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -118,7 +180,14 @@
      </widget>
     </item>
     <item row="4" column="0" colspan="3">
-     <widget class="QListWidget" name="listWidget"/>
+     <widget class="QListWidget" name="listWidget">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>200</height>
+       </size>
+      </property>
+     </widget>
     </item>
     <item row="5" column="0">
      <spacer name="horizontalSpacer_4">
@@ -146,6 +215,12 @@
        <widget class="QLineEdit" name="totalLineEdit">
         <property name="enabled">
          <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
         </property>
        </widget>
       </item>
