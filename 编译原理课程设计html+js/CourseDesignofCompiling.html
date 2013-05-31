@@ -1,0 +1,75 @@
+
+<!DOCTYPE>
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<head>
+		<title>编译原理课程设计</title>
+		<link rel="stylesheet" type="text/css" href="static/css/global.css">
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="CourseDesignofCompiling.js"></script>
+		<script type="text/javascript" src="static/js/thumbnails.js"></script>
+	</head>
+	<body>
+		<h1>
+			编译原理课程设计
+		</h1>
+		<div>
+			<h4>
+				<span style="color:red">说明：请在chrome,firefox下运行，如果选择ie，请不要禁用某些选项</span>
+			</h4>
+			<h4>
+				保留字
+			</h4>
+			<div>
+				auto break case char const continue default do double else enum
+				extern float for goto if int long register return short signed
+				sizeof static struct switch typedef union unsigned void volatile
+				while
+			</div>
+
+			<h4>
+				运算符
+			</h4>
+			<div>
+				( ) [ ] { } . ! + - * / < <= > >= == ! ; = += -= *= , */
+			</div>
+
+			<h4>
+				错误字符举例
+			</h4>
+			<div>
+				a = @ ; b = # ;错误字符行,其中@,#两个符号为错误字符
+			</div>
+		</div>
+		<div>
+			<form>
+
+
+				<h3>
+					输入:
+				</h3>
+
+
+				<textarea id="input_content" cols="80" rows="5"></textarea>
+
+
+				<div>
+					<button id="input_button">
+						提交
+					</button>
+					<div>
+						<form>
+					</div>
+
+					<div>
+						<h3>
+							输出:
+						</h3>
+						<div id="output_content">
+						</div>
+
+					</div>
+				</div>
+		</div>
+	</body>
+</html>
